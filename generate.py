@@ -153,6 +153,23 @@ def build_context(conn: sqlite3.Connection, min_score: float = 0.55) -> dict:
             )
         intent = seen_summaries[best_pr]
 
+        # NEW: Capture the Event-State logic
+        state_metadata = update_context_cube(conn, fn["name"], pr)
+
+        # Save the cube state back to DB for future "A to B" detection
+        conn.execute("""
+            INSERT OR REPLACE INTO context_cubes (symbol, pr_number, intent, event_state, last_updated)
+            VALUES (?, ?, ?, ?, ?)
+        """, (fn["name"], pr["number"], intent, state_metadata["event_state"], datetime.now().isoformat()))
+        conn.commit()
+
+# Add the state to the context object for .cursorrules
+context[fn["filename"]].append({
+    "function":   fn["name"],
+    "event_state": state_metadata["event_state"], # Pass the state to the renderer
+    # ... rest of your existing fields
+})
+
         context[fn["filename"]].append({
             "function":   fn["name"],
             "line":       fn["start_line"],
