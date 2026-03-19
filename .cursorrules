@@ -1,0 +1,909 @@
+# Codebase Context — Auto-generated from PR History
+*Generated 2026-03-17 16:27 — drop in repo root for Cursor*
+
+---
+
+## apps/web/lib/types.ts
+*17 PRs in history — generated 2026-03-17*
+
+### PR #3577 — Payout and Commission pages
+**Merged:** 2026-03-17  →  https://github.com/dubinc/dub/pull/3577
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Commission and payout detail pages with activity timelines, partner/invoice panels, linked commissions list, and loading skeletons   * New API endpoints and client hooks to fetch single commission and payout details   * New ActivityEvent and CommentCardDisplay UI components f
+
+### PR #3562 — Country Application Eligibility
+**Merged:** 2026-03-13  →  https://github.com/dubinc/dub/pull/3562
+**Why:** <img width="496" height="769" alt="image" src="https://github.com/user-attachments/assets/0fd3b19b-70b4-4224-8f62-51d9c3569acd" /> <img width="1137" height="851" alt="image" src="https://github.com/user-attachments/assets/e9e99a6f-c0a3-4cfa-830b-7fd43d7075b4" />   <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  ## Release Notes  **New Features
+
+### PR #3521 — Bounty single page & support multiple submissions
+**Merged:** 2026-03-12  →  https://github.com/dubinc/dub/pull/3521
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Multi-period submission bounties with configurable frequency/max submissions; partner bounty detail pages, performance charts, events/commissions tables, and a submissions table.   * New sheet-based claim flow and a detailed submission viewer.  * **Improvements**   * Creation
+
+### PR #3557 — Show bounties on application page
+**Merged:** 2026-03-11  →  https://github.com/dubinc/dub/pull/3557
+**Why:** Adds eligible group bounties to the shared rewards card across partner program application surfaces and updates the layout to match the Figma reference.  ### Changes - show rewards and eligible bounties in a single shared card - wire group-scoped active bounty summaries into public landing/apply pages, branding previews, marketplace detail, and invite page. - add a View all bounties / View le
+
+### PR #3530 — Convert `saleAmount` to `BigInt`
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3530
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  ## Release Notes  * **New Features**   * Added discount code management for partner programs  * **Bug Fixes**   * Improved handling of large monetary amounts in financial calculations and analytics reporting  * **Improvements**   * Enhanced API response consistency and precision for all monetary fi
+
+### PR #3449 — Stablecoins
+**Merged:** 2026-02-27  →  https://github.com/dubinc/dub/pull/3449
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Stablecoin (USDC) payouts and recipient flows so partners can receive funds to crypto wallets.   * New payout connect UI: selector, dropdown, cards, modals, and connect buttons for Stablecoin, Bank, and PayPal.  * **Improvements**   * Smarter payout method detection, defaults
+
+### PR #3448 — Integrate submission bounties with social stats
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3448
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Social-metrics bounties: tiered rewards, automatic content validation, embed previews, partner avatar support, rewards table, and new claim/submit flows.   * New endpoints and scheduled jobs to sync social metrics and batch-process updates.  * **Improvements**   * Redesigned 
+
+### PR #3467 — Partner postbacks
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3467
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added postback webhooks for partners to receive real-time event notifications.   * Partners can create and manage custom webhooks and Slack integrations.   * Postbacks automatically trigger on lead creation, sales, and commission events.   * Added postback testing, event hist
+
+### PR #3442 — Reward activity log
+**Merged:** 2026-02-10  →  https://github.com/dubinc/dub/pull/3442
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * View reward history via a history sheet and inline "View history" button.   * Activity feed now shows detailed reward events (created/updated/deleted and condition changes).   * Rewards display an "Updated" timestamp.  * **UX Improvements**   * Timestamps show richer details 
+
+### PR #3427 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3427
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Full activity log UI: feed, items, renderers, chips, descriptions, sections, partner group history sheet with "View history" button.   * New hook to fetch activity logs and three new UI icons.  * **Bug Fixes / Improvements**   * Activity logs: nullable user support, richer sc
+
+### PR #3423 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3423
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+
+### PR #3397 — Partner referral improvements
+**Merged:** 2026-02-04  →  https://github.com/dubinc/dub/pull/3397
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Unified referral status change flow with confirmation and validation   * New statuses: Meeting and Negotiation   * Edit referral details and custom fields via a new modal   * Status selector dropdown and updated status badges   * Activity logging and change diff tracking  * *
+
+### PR #3409 — Commissions on hold filter
+**Merged:** 2026-02-04  →  https://github.com/dubinc/dub/pull/3409
+**Why:** Being able to filter the commissions table by "On hold" status from fraud.  <img width="412" height="121" alt="CleanShot 2026-02-03 at 10 25 01@2x" src="https://github.com/user-attachments/assets/b006dc4d-93e9-453f-8f29-2d3671d9b7d7" />   <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added a "hold" status across commi
+
+### PR #3270 — Submitted referrals
+**Merged:** 2026-01-20  →  https://github.com/dubinc/dub/pull/3270
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Partner referral system: submission sheet, referral table, detail sheet, per-row actions (qualify, unqualify, closed‑won/closed‑lost).  * **Dashboard Improvements**   * Customers / Referrals area: tabs with counts, filters, search, pagination, column controls, and contextual 
+
+### PR #3335 — Onboarding updates
+**Merged:** 2026-01-17  →  https://github.com/dubinc/dub/pull/3335
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Product chooser during signup (Links vs Partners).   * Partner program onboarding: program setup, logo upload, reward configuration, and success screens.   * New onboarding pages: Products, Program, Program reward, Success.  * **Improvements**   * Reworked onboarding flow, pr
+
+### PR #3315 — Add social media verification functionality
+**Merged:** 2026-01-12  →  https://github.com/dubinc/dub/pull/3315
+**Why:** - Introduced new actions for starting and verifying social media accounts. - Implemented ScrapeCreators API client for fetching and verifying account profiles. - Updated social platform configurations to include names for better user experience. - Added a modal for social verification in the UI, allowing users to verify their accounts on YouTube, Instagram, TikTok, and LinkedIn. - Enhanced the
+
+---
+
+## apps/web/lib/zod/schemas/partners.ts
+*15 PRs in history — generated 2026-03-17*
+
+### PR #3570 — Show partner's defaultPayoutMethod
+**Merged:** 2026-03-12  →  https://github.com/dubinc/dub/pull/3570
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Show default payout method and connected timestamp in partner profiles and tooltips.   * Display and copy derived partner-friendly links (pretty URLs) in partner link lists.  * **Bug Fixes**   * Fixed URL construction to fall back to the original link when hostname is missing
+
+### PR #3540 — Fix saleAmount across analytics, groups, links, and partners schemas for consistent default handling
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3540
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Refactor**   * Standardized monetary field defaults (sales amounts, commissions, revenue) across analytics, partners, groups, and programs for consistent handling throughout the system.  <!-- end of auto-generated comment: release notes by coderabbit.ai -->
+
+### PR #3530 — Convert `saleAmount` to `BigInt`
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3530
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  ## Release Notes  * **New Features**   * Added discount code management for partner programs  * **Bug Fixes**   * Improved handling of large monetary amounts in financial calculations and analytics reporting  * **Improvements**   * Enhanced API response consistency and precision for all monetary fi
+
+### PR #3525 — Add option to disable future group move rules for partners
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3525
+**Why:** <img width="1056" height="830" alt="CleanShot 2026-03-05 at 12  07 37" src="https://github.com/user-attachments/assets/eaec5152-5f71-4894-9540-005d1a38028f" /> <img width="880" height="666" alt="CleanShot 2026-03-05 at 12  08 38" src="https://github.com/user-attachments/assets/1e0f3b9d-0ecc-44a6-93c2-d45f2aaee4cc" />   <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ##
+
+### PR #3449 — Stablecoins
+**Merged:** 2026-02-27  →  https://github.com/dubinc/dub/pull/3449
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Stablecoin (USDC) payouts and recipient flows so partners can receive funds to crypto wallets.   * New payout connect UI: selector, dropdown, cards, modals, and connect buttons for Stablecoin, Bank, and PayPal.  * **Improvements**   * Smarter payout method detection, defaults
+
+### PR #3448 — Integrate submission bounties with social stats
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3448
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Social-metrics bounties: tiered rewards, automatic content validation, embed previews, partner avatar support, rewards table, and new claim/submit flows.   * New endpoints and scheduled jobs to sync social metrics and batch-process updates.  * **Improvements**   * Redesigned 
+
+### PR #3462 — Bulk partner invite
+**Merged:** 2026-02-13  →  https://github.com/dubinc/dub/pull/3462
+**Why:** Allows the workspace to invite one to many partners (max 50) with the same application instance. The user separates each email with a comma to create the email chip.  Additional features: - Delete to highlight the previous email chip. Press key again to delete - User can use the left and right arrow keys to select other chips to delete - When tabbing out of the input, the email chip is create
+
+### PR #3436 — Advanced Analytics Filters
+**Merged:** 2026-02-11  →  https://github.com/dubinc/dub/pull/3436
+**Why:** Adds support for advanced filter operators in analytics: `IS`, `IS NOT`.  ### Changes  **Frontend:** - Multi-select filter UI with checkboxes - Live filtering (applies immediately) - Operator toggle between "is" and "is not" - Smart display: shows individual values or count ("2 countries") - URL format: `?country=US,BR` or `?country=-US` for negation  **Backend:** - Shared parse functi
+
+### PR #3221 — Make partner onboarding image optional and sync to user
+**Merged:** 2026-02-11  →  https://github.com/dubinc/dub/pull/3221
+**Why:** Updated the onboarding form  to make the profile image optional for partners.   Enhanced onboarding logic to sync the partner image to the user account only when creating a new partner and the user has no existing projects or custom image. So if they have no Dub account already, the image added during onboarding is used as their account profile image as well.  <img width="776" height="526" alt
+
+### PR #3414 — Add API endpoint for partner deactivation
+**Merged:** 2026-02-04  →  https://github.com/dubinc/dub/pull/3414
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Add partner deactivation endpoint (accepts partnerId or tenantId); deactivated partners show updated enrollment status and expired links.   * Add API schema and OpenAPI metadata for the new endpoint.  * **Updates**   * Frontend now calls the single-partner deactivate API (par
+
+### PR #3358 — Add support for program-wide deactivation
+**Merged:** 2026-02-04  →  https://github.com/dubinc/dub/pull/3358
+**Why:** Updated the partner deactivation email template to handle cases where the entire partner program is deactivated, not just individual partnerships. The email content now conditionally renders different messages and instructions based on whether the deactivation is for the whole program or a single partner.  Adds the prop `programDeactivated`, but isn't being used in the backend yet.  ## Partner
+
+### PR #3385 — Improve partner platforms onboarding step
+**Merged:** 2026-01-27  →  https://github.com/dubinc/dub/pull/3385
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Improvements**   * Renamed and streamlined "Online Presence" → "Partner Platforms" across onboarding, forms, and UI (updated labels and fallback text like "No platforms connected").   * Onboarding now navigates to Platforms and then Payouts; deprecated onboarding URLs redirect to new paths.   *
+
+### PR #3341 — Bulk partner actions update
+**Merged:** 2026-01-13  →  https://github.com/dubinc/dub/pull/3341
+**Why:** - Introduces bulk archive and deactivate actions for partners in the dashboard.  - New modals and server actions to handle the actions.  - Changed the "Add to group" button to "Change group" to match the language of the row actions. - Remove the additional actions from all other statuses, since "Ban partner" was showing on statuses in which that action doesn't apply.   https://github.com/use
+
+### PR #3315 — Add social media verification functionality
+**Merged:** 2026-01-12  →  https://github.com/dubinc/dub/pull/3315
+**Why:** - Introduced new actions for starting and verifying social media accounts. - Implemented ScrapeCreators API client for fetching and verifying account profiles. - Updated social platform configurations to include names for better user experience. - Added a modal for social verification in the UI, allowing users to verify their accounts on YouTube, Instagram, TikTok, and LinkedIn. - Enhanced the
+
+### PR #3327 — add Google user content support for workspace logo
+**Merged:** 2026-01-08  →  https://github.com/dubinc/dub/pull/3327
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **New Features**   * Workspace logos now support Google user content image URLs in addition to existing formats  * **Improvements**   * Enhanced image URL validation consistency across the platform  <sub>✏️ Tip: You can customize this high-level summary in your review settings.</sub>  <!-- end o
+
+---
+
+## apps/web/lib/api/conversions/track-sale.ts
+*13 PRs in history — generated 2026-03-17*
+
+### PR #3596 — Improve "Matching customer email" fraud checking
+**Merged:** 2026-03-17  →  https://github.com/dubinc/dub/pull/3596
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Improvements**   * Enhanced fraud detection system to differentiate between first-time and returning customer interactions for more accurate fraud checks   * Refined historical domain matching logic to provide better customer verification  * **Maintenance**   * Added cleanup utilities for manag
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3514 — Add customer signup date and subscription date as reward condition
+**Merged:** 2026-03-05  →  https://github.com/dubinc/dub/pull/3514
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Rewards can target customer signupDate and subscriptionStartDate; these dates are now available in reward context and partner commission payloads.   * Reward condition types now include date with date-specific operators.  * **UI**   * Added a DatePicker and date-aware inputs 
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3467 — Partner postbacks
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3467
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added postback webhooks for partners to receive real-time event notifications.   * Partners can create and manage custom webhooks and Slack integrations.   * Postbacks automatically trigger on lead creation, sales, and commission events.   * Added postback testing, event hist
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3474 — Add getLeadEvent helper + cache lead event in createNewCustomer (Stripe)
+**Merged:** 2026-02-17  →  https://github.com/dubinc/dub/pull/3474
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added Redis-backed caching and a cached fetch path for lead events to speed lookups.  * **Bug Fixes**   * Improved error handling and fallbacks in payment webhooks and invoice processing; preserve workspace context when lead data is missing.   * Made sales and order processin
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3461 — Customer subscription duration reward modifier
+**Merged:** 2026-02-13  →  https://github.com/dubinc/dub/pull/3461
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added subscription-duration tracking for customers; rewards now consider subscription months when evaluating commissions.   * Subscription duration displayed in human-friendly month format across partner program UI; condition labels improved for clearer display.  * **Tests** 
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3427 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3427
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Full activity log UI: feed, items, renderers, chips, descriptions, sections, partner group history sheet with "View history" button.   * New hook to fetch activity logs and three new UI icons.  * **Bug Fixes / Improvements**   * Activity logs: nullable user support, richer sc
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3423 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3423
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3381 — Fix direct sale tracking leadEventData
+**Merged:** 2026-01-25  →  https://github.com/dubinc/dub/pull/3381
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  ## Bug Fixes * Improved sale conversion tracking to capture more complete data from click events, enhancing conversion attribution accuracy.  <sub>✏️ Tip: You can customize this high-level summary in your review settings.</sub>  <!-- end of auto-generated comment: release notes by coderabbit.ai --
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3379 — Add more customer stats (`firstSaleAt`, `subscriptionCanceledAt`)
+**Merged:** 2026-01-24  →  https://github.com/dubinc/dub/pull/3379
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Track customers' first purchase date and subscription cancellation date across payments and commission sources   * Stripe webhook now captures subscription cancellation events; backfill script added to populate historical data  * **Improvements**   * Added database indexes to
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3270 — Submitted referrals
+**Merged:** 2026-01-20  →  https://github.com/dubinc/dub/pull/3270
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Partner referral system: submission sheet, referral table, detail sheet, per-row actions (qualify, unqualify, closed‑won/closed‑lost).  * **Dashboard Improvements**   * Customers / Referrals area: tabs with counts, filters, search, pagination, column controls, and contextual 
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3344 — Attribute sales to correct link when clickId provided for existing customers
+**Merged:** 2026-01-14  →  https://github.com/dubinc/dub/pull/3344
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Bug Fixes**   * Enhanced click-based sales tracking with improved attribution accuracy.   * Refined error handling to better distinguish between missing tracking data scenarios.  * **Improvements**   * Strengthened customer creation process for click-originated conversions.   * Optimized image
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+### PR #3318 — Don't create lead commission for direct sale tracking
+**Merged:** 2026-01-07  →  https://github.com/dubinc/dub/pull/3318
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Refactor**   * Streamlined the lead tracking process by removing partner commission creation and associated fraud detection checks from the lead processing pipeline. Lead tracking now focuses on core metrics: lead recording, link statistics, and workspace usage updates.  <sub>✏️ Tip: You can c
+**Functions touched:** `trackSale()` (L48), `_trackLead()` (L305), `_trackSale()` (L412)
+
+---
+
+## apps/web/lib/zod/schemas/rewards.ts
+*11 PRs in history — generated 2026-03-17*
+
+### PR #3530 — Convert `saleAmount` to `BigInt`
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3530
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  ## Release Notes  * **New Features**   * Added discount code management for partner programs  * **Bug Fixes**   * Improved handling of large monetary amounts in financial calculations and analytics reporting  * **Improvements**   * Enhanced API response consistency and precision for all monetary fi
+
+### PR #3514 — Add customer signup date and subscription date as reward condition
+**Merged:** 2026-03-05  →  https://github.com/dubinc/dub/pull/3514
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Rewards can target customer signupDate and subscriptionStartDate; these dates are now available in reward context and partner commission payloads.   * Reward condition types now include date with date-specific operators.  * **UI**   * Added a DatePicker and date-aware inputs 
+
+### PR #3506 — Add "enum" type to RewardConditionEntityAttribute, hide customer source if not REFERRAL_ENABLED_PROGRAM_IDS
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3506
+**Why:** …ce if not REFERRAL_ENABLED_PROGRAM_IDS  <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added support for enum-type reward condition attributes   * Operators now dynamically adjust based on attribute type, with specialized handling for enum, string, and numeric attributes   * Improved condition builder UI with enhanced re
+
+### PR #3461 — Customer subscription duration reward modifier
+**Merged:** 2026-02-13  →  https://github.com/dubinc/dub/pull/3461
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added subscription-duration tracking for customers; rewards now consider subscription months when evaluating commissions.   * Subscription duration displayed in human-friendly month format across partner program UI; condition labels improved for clearer display.  * **Tests** 
+
+### PR #3442 — Reward activity log
+**Merged:** 2026-02-10  →  https://github.com/dubinc/dub/pull/3442
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * View reward history via a history sheet and inline "View history" button.   * Activity feed now shows detailed reward events (created/updated/deleted and condition changes).   * Rewards display an "Updated" timestamp.  * **UX Improvements**   * Timestamps show richer details 
+
+### PR #3441 — Add optional id to reward modifiers for activity log comparison
+**Merged:** 2026-02-09  →  https://github.com/dubinc/dub/pull/3441
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Improvements**   * Reward modifiers now automatically include unique identifiers when created or edited, improving tracking and consistency.   * Existing reward modifiers have been backfilled with identifiers to ensure platform-wide consistency and prevent missing-id issues.   * ID generation m
+
+### PR #3421 — Add program reward education and helper content
+**Merged:** 2026-02-05  →  https://github.com/dubinc/dub/pull/3421
+**Why:** - Fixed an issue in which selecting `lifetime` in the onboarding flow deselects and defaults to one time. - Added `most common` tags to the onboarding reward builder, and new program setup to reduce decision paralysis - Added helper text to empty rewards to give more context.  - Added additional helper text to the reward drawers that can be dismissed and never shown again.  ## Onboarding htt
+
+### PR #3383 — Track free trials lead events via Stripe integration
+**Merged:** 2026-01-26  →  https://github.com/dubinc/dub/pull/3383
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Track Stripe trial subscriptions as lead events and publish trial leads.   * Stripe integration settings UI to enable "Track free trials" and optional "Track provisioned quantity".   * Server-side support to save Stripe integration settings and register Stripe in integrations
+
+### PR #3369 — Submitted referrals followup
+**Merged:** 2026-01-21  →  https://github.com/dubinc/dub/pull/3369
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Optional External ID when qualifying a referral.   * Pending referrals badge on Customers nav (capped at 99+).   * New operator options for source-based reward conditions.   * New form-based modal for marking a referral Closed Won (sale amount + optional Stripe ID).  * **Refa
+
+### PR #3270 — Submitted referrals
+**Merged:** 2026-01-20  →  https://github.com/dubinc/dub/pull/3270
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Partner referral system: submission sheet, referral table, detail sheet, per-row actions (qualify, unqualify, closed‑won/closed‑lost).  * **Dashboard Improvements**   * Customers / Referrals area: tabs with counts, filters, search, pagination, column controls, and contextual 
+
+### PR #3335 — Onboarding updates
+**Merged:** 2026-01-17  →  https://github.com/dubinc/dub/pull/3335
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Product chooser during signup (Links vs Partners).   * Partner program onboarding: program setup, logo upload, reward configuration, and success screens.   * New onboarding pages: Products, Program, Program reward, Success.  * **Improvements**   * Reworked onboarding flow, pr
+
+---
+
+## apps/web/lib/partners/create-partner-commission.ts
+*11 PRs in history — generated 2026-03-17*
+
+### PR #3545 — Format code style across partner and API routes
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3545
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Refactor**   * Reformatted code and cleaned up duplicate imports across several API endpoints and utilities for consistency.  * **Bug Fixes**   * Fixed referral token eligibility logic to correctly handle edge cases around partner reputation and ban status. <!-- end of auto-generated comment: r
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3530 — Convert `saleAmount` to `BigInt`
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3530
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  ## Release Notes  * **New Features**   * Added discount code management for partner programs  * **Bug Fixes**   * Improved handling of large monetary amounts in financial calculations and analytics reporting  * **Improvements**   * Enhanced API response consistency and precision for all monetary fi
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3514 — Add customer signup date and subscription date as reward condition
+**Merged:** 2026-03-05  →  https://github.com/dubinc/dub/pull/3514
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Rewards can target customer signupDate and subscriptionStartDate; these dates are now available in reward context and partner commission payloads.   * Reward condition types now include date with date-specific operators.  * **UI**   * Added a DatePicker and date-aware inputs 
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3489 — Account for custom createdAt in subscriptionDurationMonths calculation
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3489
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Bug Fixes**   * Partner commission calculations now use the creation date instead of the current date when computing subscription duration, ensuring more accurate commission amounts.   * Enhanced logging for commission calculations to include additional details about subscription duration and m
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3467 — Partner postbacks
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3467
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added postback webhooks for partners to receive real-time event notifications.   * Partners can create and manage custom webhooks and Slack integrations.   * Postbacks automatically trigger on lead creation, sales, and commission events.   * Added postback testing, event hist
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3461 — Customer subscription duration reward modifier
+**Merged:** 2026-02-13  →  https://github.com/dubinc/dub/pull/3461
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added subscription-duration tracking for customers; rewards now consider subscription months when evaluating commissions.   * Subscription duration displayed in human-friendly month format across partner program UI; condition labels improved for clearer display.  * **Tests** 
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3427 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3427
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Full activity log UI: feed, items, renderers, chips, descriptions, sections, partner group history sheet with "View history" button.   * New hook to fetch activity logs and three new UI icons.  * **Bug Fixes / Improvements**   * Activity logs: nullable user support, richer sc
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3423 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3423
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3270 — Submitted referrals
+**Merged:** 2026-01-20  →  https://github.com/dubinc/dub/pull/3270
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Partner referral system: submission sheet, referral table, detail sheet, per-row actions (qualify, unqualify, closed‑won/closed‑lost).  * **Dashboard Improvements**   * Customers / Referrals area: tabs with counts, filters, search, pagination, column controls, and contextual 
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+### PR #3348 — Add link details to `commission.created` webhook event
+**Merged:** 2026-01-13  →  https://github.com/dubinc/dub/pull/3348
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **New Features**   * Commission data now includes associated link information (ID, short link, domain, key) in API responses and webhook events. The link field is optional and nullable for backward compatibility.  <sub>✏️ Tip: You can customize this high-level summary in your review settings.</s
+**Functions touched:** `constructWebhookPartner()` (L48), `createPartnerCommission()` (L64)
+
+---
+
+## apps/web/lib/actions/partners/create-manual-commission.ts
+*10 PRs in history — generated 2026-03-17*
+
+### PR #3488 — Exclude imported commissions from getCustomerStripeInvoices
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3488
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Stripe invoices now include visual indicators distinguishing between already imported and unimported invoices in the commission creation interface   * The commission workflow clearly shows which invoices have previously been associated with existing commissions  * **Improveme
+
+### PR #3482 — Import customers from Stripe
+**Merged:** 2026-02-18  →  https://github.com/dubinc/dub/pull/3482
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Search and import customers from Stripe by email in the Add Customer modal; pre-fill fields and link to existing records.   * View and import paid Stripe invoices for a customer when creating sale commissions; choose invoices as sale events.  * **Improvements**   * Clarified 
+
+### PR #3461 — Customer subscription duration reward modifier
+**Merged:** 2026-02-13  →  https://github.com/dubinc/dub/pull/3461
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added subscription-duration tracking for customers; rewards now consider subscription months when evaluating commissions.   * Subscription duration displayed in human-friendly month format across partner program UI; condition labels improved for clearer display.  * **Tests** 
+
+### PR #3427 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3427
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Full activity log UI: feed, items, renderers, chips, descriptions, sections, partner group history sheet with "View history" button.   * New hook to fetch activity logs and three new UI icons.  * **Bug Fixes / Improvements**   * Activity logs: nullable user support, richer sc
+
+### PR #3423 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3423
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+
+### PR #3379 — Add more customer stats (`firstSaleAt`, `subscriptionCanceledAt`)
+**Merged:** 2026-01-24  →  https://github.com/dubinc/dub/pull/3379
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Track customers' first purchase date and subscription cancellation date across payments and commission sources   * Stripe webhook now captures subscription cancellation events; backfill script added to populate historical data  * **Improvements**   * Added database indexes to
+
+### PR #3332 —  Introduced two new workspace roles `viewer` and `billing`
+**Merged:** 2026-01-15  →  https://github.com/dubinc/dub/pull/3332
+**Why:** - Introduced a new `WorkspaceRole` enum with roles: owner, member, viewer, and billing. - Updated various API endpoints and UI components to utilize the new role structure. - Enhanced permission checks for payment methods to include viewer and billing roles. - Improved role management in user invites and workspace settings.  This refactor aims to streamline role management and enhance access 
+
+### PR #3356 — Refactor workspace roles and permissions
+**Merged:** 2026-01-15  →  https://github.com/dubinc/dub/pull/3356
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **New Features**   * Added "viewer" and "billing" workspace roles for more granular access control   * Implemented plan-based role availability—roles now vary by subscription tier  * **Bug Fixes & Improvements**   * Enhanced access controls across API endpoints with role and permission validatio
+
+### PR #3320 — Fix sheet previous/next navigation
+**Merged:** 2026-01-07  →  https://github.com/dubinc/dub/pull/3320
+**Why:** Upgrades `next-safe-action` to include a [fix](https://github.com/TheEdoRan/next-safe-action/pull/377) for stale state access in callbacks. Now when `onNext()` is called in an action's `onSuccess` callback, it'll be the latest version.  Also updates all uses of now-deprecated `actionClient.schema(...)` to `actionClient.inputSchema(...)`  <!-- This is an auto-generated comment: release notes by c
+
+---
+
+## apps/web/ui/partners/rewards/rewards-logic.tsx
+*9 PRs in history — generated 2026-03-17*
+
+### PR #3514 — Add customer signup date and subscription date as reward condition
+**Merged:** 2026-03-05  →  https://github.com/dubinc/dub/pull/3514
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Rewards can target customer signupDate and subscriptionStartDate; these dates are now available in reward context and partner commission payloads.   * Reward condition types now include date with date-specific operators.  * **UI**   * Added a DatePicker and date-aware inputs 
+**Functions touched:** `RewardsLogic()` (L69), `ConditionalGroup()` (L142), `formatValue()` (L221), `ConditionLogic()` (L282), `OperatorDropdown()` (L703), `ResultTerms()` (L758), `ResultAmountInput()` (L879), `AmountInput()` (L911), `VerticalLine()` (L936)
+
+### PR #3506 — Add "enum" type to RewardConditionEntityAttribute, hide customer source if not REFERRAL_ENABLED_PROGRAM_IDS
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3506
+**Why:** …ce if not REFERRAL_ENABLED_PROGRAM_IDS  <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added support for enum-type reward condition attributes   * Operators now dynamically adjust based on attribute type, with specialized handling for enum, string, and numeric attributes   * Improved condition builder UI with enhanced re
+**Functions touched:** `RewardsLogic()` (L69), `ConditionalGroup()` (L142), `formatValue()` (L221), `ConditionLogic()` (L282), `OperatorDropdown()` (L703), `ResultTerms()` (L758), `ResultAmountInput()` (L879), `AmountInput()` (L911), `VerticalLine()` (L936)
+
+### PR #3448 — Integrate submission bounties with social stats
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3448
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Social-metrics bounties: tiered rewards, automatic content validation, embed previews, partner avatar support, rewards table, and new claim/submit flows.   * New endpoints and scheduled jobs to sync social metrics and batch-process updates.  * **Improvements**   * Redesigned 
+**Functions touched:** `RewardsLogic()` (L69), `ConditionalGroup()` (L142), `formatValue()` (L221), `ConditionLogic()` (L282), `OperatorDropdown()` (L703), `ResultTerms()` (L758), `ResultAmountInput()` (L879), `AmountInput()` (L911), `VerticalLine()` (L936)
+
+### PR #3461 — Customer subscription duration reward modifier
+**Merged:** 2026-02-13  →  https://github.com/dubinc/dub/pull/3461
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added subscription-duration tracking for customers; rewards now consider subscription months when evaluating commissions.   * Subscription duration displayed in human-friendly month format across partner program UI; condition labels improved for clearer display.  * **Tests** 
+**Functions touched:** `RewardsLogic()` (L69), `ConditionalGroup()` (L142), `formatValue()` (L221), `ConditionLogic()` (L282), `OperatorDropdown()` (L703), `ResultTerms()` (L758), `ResultAmountInput()` (L879), `AmountInput()` (L911), `VerticalLine()` (L936)
+
+### PR #3441 — Add optional id to reward modifiers for activity log comparison
+**Merged:** 2026-02-09  →  https://github.com/dubinc/dub/pull/3441
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Improvements**   * Reward modifiers now automatically include unique identifiers when created or edited, improving tracking and consistency.   * Existing reward modifiers have been backfilled with identifiers to ensure platform-wide consistency and prevent missing-id issues.   * ID generation m
+**Functions touched:** `RewardsLogic()` (L69), `ConditionalGroup()` (L142), `formatValue()` (L221), `ConditionLogic()` (L282), `OperatorDropdown()` (L703), `ResultTerms()` (L758), `ResultAmountInput()` (L879), `AmountInput()` (L911), `VerticalLine()` (L936)
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+**Functions touched:** `RewardsLogic()` (L69), `ConditionalGroup()` (L142), `formatValue()` (L221), `ConditionLogic()` (L282), `OperatorDropdown()` (L703), `ResultTerms()` (L758), `ResultAmountInput()` (L879), `AmountInput()` (L911), `VerticalLine()` (L936)
+
+### PR #3383 — Track free trials lead events via Stripe integration
+**Merged:** 2026-01-26  →  https://github.com/dubinc/dub/pull/3383
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Track Stripe trial subscriptions as lead events and publish trial leads.   * Stripe integration settings UI to enable "Track free trials" and optional "Track provisioned quantity".   * Server-side support to save Stripe integration settings and register Stripe in integrations
+**Functions touched:** `RewardsLogic()` (L69), `ConditionalGroup()` (L142), `formatValue()` (L221), `ConditionLogic()` (L282), `OperatorDropdown()` (L703), `ResultTerms()` (L758), `ResultAmountInput()` (L879), `AmountInput()` (L911), `VerticalLine()` (L936)
+
+### PR #3369 — Submitted referrals followup
+**Merged:** 2026-01-21  →  https://github.com/dubinc/dub/pull/3369
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Optional External ID when qualifying a referral.   * Pending referrals badge on Customers nav (capped at 99+).   * New operator options for source-based reward conditions.   * New form-based modal for marking a referral Closed Won (sale amount + optional Stripe ID).  * **Refa
+**Functions touched:** `RewardsLogic()` (L69), `ConditionalGroup()` (L142), `formatValue()` (L221), `ConditionLogic()` (L282), `OperatorDropdown()` (L703), `ResultTerms()` (L758), `ResultAmountInput()` (L879), `AmountInput()` (L911), `VerticalLine()` (L936)
+
+### PR #3270 — Submitted referrals
+**Merged:** 2026-01-20  →  https://github.com/dubinc/dub/pull/3270
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Partner referral system: submission sheet, referral table, detail sheet, per-row actions (qualify, unqualify, closed‑won/closed‑lost).  * **Dashboard Improvements**   * Customers / Referrals area: tabs with counts, filters, search, pagination, column controls, and contextual 
+**Functions touched:** `RewardsLogic()` (L69), `ConditionalGroup()` (L142), `formatValue()` (L221), `ConditionLogic()` (L282), `OperatorDropdown()` (L703), `ResultTerms()` (L758), `ResultAmountInput()` (L879), `AmountInput()` (L911), `VerticalLine()` (L936)
+
+---
+
+## apps/web/lib/zod/schemas/customers.ts
+*9 PRs in history — generated 2026-03-17*
+
+### PR #3184 — Add cursor based pagination to Links, Customers, and Commissions
+**Merged:** 2026-03-12  →  https://github.com/dubinc/dub/pull/3184
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Cursor-based pagination alongside page-based navigation; responses include next-cursor hints.   * Routes default to page=1 when omitted.  * **Bug Fixes**   * Stronger validation and clearer errors for invalid, conflicting, or non-existent pagination cursors.   * Improved UI e
+
+### PR #3530 — Convert `saleAmount` to `BigInt`
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3530
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  ## Release Notes  * **New Features**   * Added discount code management for partner programs  * **Bug Fixes**   * Improved handling of large monetary amounts in financial calculations and analytics reporting  * **Improvements**   * Enhanced API response consistency and precision for all monetary fi
+
+### PR #3499 — Export customers
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3499
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * CSV export for customers with selectable columns, immediate download for small exports and background processing for large exports (1000+), plus email notification when ready   * Export buttons added to customer pages and dashboard controls; dedicated export modal and popover
+
+### PR #3488 — Exclude imported commissions from getCustomerStripeInvoices
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3488
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Stripe invoices now include visual indicators distinguishing between already imported and unimported invoices in the commission creation interface   * The commission workflow clearly shows which invoices have previously been associated with existing commissions  * **Improveme
+
+### PR #3482 — Import customers from Stripe
+**Merged:** 2026-02-18  →  https://github.com/dubinc/dub/pull/3482
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Search and import customers from Stripe by email in the Add Customer modal; pre-fill fields and link to existing records.   * View and import paid Stripe invoices for a customer when creating sale commissions; choose invoices as sale events.  * **Improvements**   * Clarified 
+
+### PR #3398 — Update customer page + add sortBy firstSaleAt/subscriptionCanceledAt
+**Merged:** 2026-01-30  →  https://github.com/dubinc/dub/pull/3398
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added "First sale date" and "Subscription canceled" stats for customers.   * Expanded table sorting to include First sale date and Subscription canceled.   * Customer stats now show lifetime value with a compact sales count and link to 1-year sales view.  * **UI Updates**   *
+
+### PR #3380 — Add more customer columns (Paid, Canceled)
+**Merged:** 2026-01-24  →  https://github.com/dubinc/dub/pull/3380
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Location-based filtering in the partners table.   * New "Paid" (first sale) and "Canceled" (subscription canceled) columns in the customer table.   * Row click/new-tab navigation and prefetching for customer rows.   * Onboarding flow updated to prioritize inviting partners.  
+
+### PR #3372 — Edit customer info
+**Merged:** 2026-01-21  →  https://github.com/dubinc/dub/pull/3372
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Edit Customer modal to update name, email, External ID, and Stripe Customer ID.   * Enhanced customer details with "Since" timestamp, device/browser/OS links, UTM summary, and richer referral/partner info.   * Stripe Customer ID surfaced and linked for easier tracking.
+
+### PR #3353 — Add `stripeCustomerId` to customer profile pages
+**Merged:** 2026-01-14  →  https://github.com/dubinc/dub/pull/3353
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added Stripe Customer ID to customer details view with a truncated display, tooltip, and a "View in Stripe" link that opens the Stripe dashboard in a new tab.  * **Tests**   * Updated customer tests to include the Stripe Customer ID field so it is asserted in relevant scenari
+
+---
+
+## apps/web/lib/zod/schemas/bounties.ts
+*9 PRs in history — generated 2026-03-17*
+
+### PR #3521 — Bounty single page & support multiple submissions
+**Merged:** 2026-03-12  →  https://github.com/dubinc/dub/pull/3521
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Multi-period submission bounties with configurable frequency/max submissions; partner bounty detail pages, performance charts, events/commissions tables, and a submissions table.   * New sheet-based claim flow and a detailed submission viewer.  * **Improvements**   * Creation
+
+### PR #3546 — Multiple submissions
+**Merged:** 2026-03-08  →  https://github.com/dubinc/dub/pull/3546
+
+### PR #3530 — Convert `saleAmount` to `BigInt`
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3530
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  ## Release Notes  * **New Features**   * Added discount code management for partner programs  * **Bug Fixes**   * Improved handling of large monetary amounts in financial calculations and analytics reporting  * **Improvements**   * Enhanced API response consistency and precision for all monetary fi
+
+### PR #3448 — Integrate submission bounties with social stats
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3448
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Social-metrics bounties: tiered rewards, automatic content validation, embed previews, partner avatar support, rewards table, and new claim/submit flows.   * New endpoints and scheduled jobs to sync social metrics and batch-process updates.  * **Improvements**   * Redesigned 
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+
+### PR #3376 — Add seed data and scripts for workspace setup
+**Merged:** 2026-01-23  →  https://github.com/dubinc/dub/pull/3376
+**Why:** - Introduced `data.json` containing workspace, users, domains, folders, rewards, groups, programs, and partners. - Created `seed.ts` script to parse JSON data and populate the database with initial values for workspace and related entities. - Updated customer details UI for better layout and removed unnecessary whitespace in the edit customer modal.  <!-- This is an auto-generated comment: relea
+
+### PR #3378 — Add descriptions for bounty submissions API
+**Merged:** 2026-01-22  →  https://github.com/dubinc/dub/pull/3378
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Refactor**   * Enhanced bounty API and data schema documentation with descriptive metadata for improved clarity across parameter definitions and field descriptions.  * **Style**   * Standardized import statements and formatting across several components for consistency.  <sub>✏️ Tip: You can c
+
+### PR #3346 — Add bounty submission approval and rejection endpoints
+**Merged:** 2026-01-14  →  https://github.com/dubinc/dub/pull/3346
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Add endpoints to approve, reject, and retrieve individual bounty submissions (with optional custom reward and rejection details).   * Added listing endpoint for bounty submissions and corresponding OpenAPI specs.  * **Improvements**   * Centralized approval/rejection flows wi
+
+### PR #2986 — Improve bounty submissions review flow
+**Merged:** 2025-10-20  →  https://github.com/dubinc/dub/pull/2986
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Header navigation and wrap‑around next/previous controls in submission details, keyboard shortcuts (←/→, A to approve, R to reject), and auto‑advance on approve; buttons show shortcuts.   * Optionally include per‑bounty submissions counts (total/submitted/approved); UI surfac
+
+---
+
+## apps/web/app/(ee)/api/stripe/integration/webhook/checkout-session-completed.ts
+*9 PRs in history — generated 2026-03-17*
+
+### PR #3596 — Improve "Matching customer email" fraud checking
+**Merged:** 2026-03-17  →  https://github.com/dubinc/dub/pull/3596
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Improvements**   * Enhanced fraud detection system to differentiate between first-time and returning customer interactions for more accurate fraud checks   * Refined historical domain matching logic to provide better customer verification  * **Maintenance**   * Added cleanup utilities for manag
+**Functions touched:** `checkoutSessionCompleted()` (L36), `attributeViaPromoCode()` (L555), `incrementLinkLeads()` (L749)
+
+### PR #3514 — Add customer signup date and subscription date as reward condition
+**Merged:** 2026-03-05  →  https://github.com/dubinc/dub/pull/3514
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Rewards can target customer signupDate and subscriptionStartDate; these dates are now available in reward context and partner commission payloads.   * Reward condition types now include date with date-specific operators.  * **UI**   * Added a DatePicker and date-aware inputs 
+**Functions touched:** `checkoutSessionCompleted()` (L36), `attributeViaPromoCode()` (L555), `incrementLinkLeads()` (L749)
+
+### PR #3467 — Partner postbacks
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3467
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added postback webhooks for partners to receive real-time event notifications.   * Partners can create and manage custom webhooks and Slack integrations.   * Postbacks automatically trigger on lead creation, sales, and commission events.   * Added postback testing, event hist
+**Functions touched:** `checkoutSessionCompleted()` (L36), `attributeViaPromoCode()` (L555), `incrementLinkLeads()` (L749)
+
+### PR #3474 — Add getLeadEvent helper + cache lead event in createNewCustomer (Stripe)
+**Merged:** 2026-02-17  →  https://github.com/dubinc/dub/pull/3474
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added Redis-backed caching and a cached fetch path for lead events to speed lookups.  * **Bug Fixes**   * Improved error handling and fallbacks in payment webhooks and invoice processing; preserve workspace context when lead data is missing.   * Made sales and order processin
+**Functions touched:** `checkoutSessionCompleted()` (L36), `attributeViaPromoCode()` (L555), `incrementLinkLeads()` (L749)
+
+### PR #3427 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3427
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Full activity log UI: feed, items, renderers, chips, descriptions, sections, partner group history sheet with "View history" button.   * New hook to fetch activity logs and three new UI icons.  * **Bug Fixes / Improvements**   * Activity logs: nullable user support, richer sc
+**Functions touched:** `checkoutSessionCompleted()` (L36), `attributeViaPromoCode()` (L555), `incrementLinkLeads()` (L749)
+
+### PR #3423 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3423
+**Functions touched:** `checkoutSessionCompleted()` (L36), `attributeViaPromoCode()` (L555), `incrementLinkLeads()` (L749)
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+**Functions touched:** `checkoutSessionCompleted()` (L36), `attributeViaPromoCode()` (L555), `incrementLinkLeads()` (L749)
+
+### PR #3379 — Add more customer stats (`firstSaleAt`, `subscriptionCanceledAt`)
+**Merged:** 2026-01-24  →  https://github.com/dubinc/dub/pull/3379
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Track customers' first purchase date and subscription cancellation date across payments and commission sources   * Stripe webhook now captures subscription cancellation events; backfill script added to populate historical data  * **Improvements**   * Added database indexes to
+**Functions touched:** `checkoutSessionCompleted()` (L36), `attributeViaPromoCode()` (L555), `incrementLinkLeads()` (L749)
+
+### PR #3336 — Stripe Integration: Account for payment_status != "paid" edge case
+**Merged:** 2026-01-11  →  https://github.com/dubinc/dub/pull/3336
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Bug Fixes**   * Webhook now ensures only fully paid checkout sessions proceed, preventing incomplete/failed payments from being processed.   * Improved edge-case handling and diagnostics: 0-amount cases no longer expose invoice identifiers and setup-mode messages display the mode value consiste
+**Functions touched:** `checkoutSessionCompleted()` (L36), `attributeViaPromoCode()` (L555), `incrementLinkLeads()` (L749)
+
+---
+
+## pnpm-lock.yaml
+*8 PRs in history — generated 2026-03-17*
+
+### PR #3541 — Implement runtime cache to guard against traffic spikes
+**Merged:** 2026-03-09  →  https://github.com/dubinc/dub/pull/3541
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Refactor**   * Improved multi-tier caching: added a short-lived edge-layer fallback and regional cache reads for faster, more reliable link and click lookups; logging updated to reflect cache interactions.  * **Chores**   * Bumped a deployment library version.   * Set middleware runtime to Node
+
+### PR #3517 — Embeddable support chat
+**Merged:** 2026-03-03  →  https://github.com/dubinc/dub/pull/3517
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * AI-powered support chat: authenticated, per-user rate limits, streaming responses, and escalation to human support via ticket creation.   * Two embed modes: responsive embedded widget with dynamic height and transparent layout, plus a floating chat bubble.   * Full chat UI: w
+
+### PR #3491 — Bump react-email packages and pin esbuild for email dev server
+**Merged:** 2026-02-23  →  https://github.com/dubinc/dub/pull/3491
+**Why:** - @react-email/components 1.0.2 → 1.0.8, markdown 0.0.17 → 0.0.18, render 2.0.0 → 2.0.4 - react-email 5.1.0 → 5.2.8, @react-email/preview-server 5.1.0 → 5.2.8 - Add esbuild 0.25.10 devDependency to fix host/binary version mismatch when running email template preview  <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Chores**   * Updated dep
+
+### PR #3432 — Remove posthog from codebase
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3432
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  ## Release Notes  * **Chores**   * Streamlined analytics infrastructure and dependencies to improve application performance and reduce resource overhead   * Optimized backend tracking system configuration for better efficiency  * **Refactor**   * Enhanced upgrade plan workflow to provide improved 
+
+### PR #3397 — Partner referral improvements
+**Merged:** 2026-02-04  →  https://github.com/dubinc/dub/pull/3397
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Unified referral status change flow with confirmation and validation   * New statuses: Meeting and Negotiation   * Edit referral details and custom fields via a new modal   * Status selector dropdown and updated status badges   * Activity logging and change diff tracking  * *
+
+### PR #3328 — Sync partner social statistics
+**Merged:** 2026-01-13  →  https://github.com/dubinc/dub/pull/3328
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Sync and display social stats (followers/subscribers, posts, views) for YouTube, Instagram, TikTok and Twitter across partner profiles, forms, and summaries.   * Expanded verification flow to capture and store platform-specific stats.  * **Background Jobs**   * New paginated 
+
+### PR #3320 — Fix sheet previous/next navigation
+**Merged:** 2026-01-07  →  https://github.com/dubinc/dub/pull/3320
+**Why:** Upgrades `next-safe-action` to include a [fix](https://github.com/TheEdoRan/next-safe-action/pull/377) for stale state access in callbacks. Now when `onNext()` is called in an action's `onSuccess` callback, it'll be the latest version.  Also updates all uses of now-deprecated `actionClient.schema(...)` to `actionClient.inputSchema(...)`  <!-- This is an auto-generated comment: release notes by c
+
+### PR #3321 — Upgrade Tiptap packages
+**Merged:** 2026-01-07  →  https://github.com/dubinc/dub/pull/3321
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Chores**   * Updated TipTap rich text editor library dependencies across the web application and UI packages to unified version 3.15.3. This consolidation standardizes editor library versions throughout the platform and improves overall stability, compatibility, and consistency across all text
+
+---
+
+## apps/web/lib/zod/schemas/partner-profile.ts
+*8 PRs in history — generated 2026-03-17*
+
+### PR #3521 — Bounty single page & support multiple submissions
+**Merged:** 2026-03-12  →  https://github.com/dubinc/dub/pull/3521
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Multi-period submission bounties with configurable frequency/max submissions; partner bounty detail pages, performance charts, events/commissions tables, and a submissions table.   * New sheet-based claim flow and a detailed submission viewer.  * **Improvements**   * Creation
+
+### PR #3530 — Convert `saleAmount` to `BigInt`
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3530
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  ## Release Notes  * **New Features**   * Added discount code management for partner programs  * **Bug Fixes**   * Improved handling of large monetary amounts in financial calculations and analytics reporting  * **Improvements**   * Enhanced API response consistency and precision for all monetary fi
+
+### PR #3449 — Stablecoins
+**Merged:** 2026-02-27  →  https://github.com/dubinc/dub/pull/3449
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Stablecoin (USDC) payouts and recipient flows so partners can receive funds to crypto wallets.   * New payout connect UI: selector, dropdown, cards, modals, and connect buttons for Stablecoin, Bank, and PayPal.  * **Improvements**   * Smarter payout method detection, defaults
+
+### PR #3448 — Integrate submission bounties with social stats
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3448
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Social-metrics bounties: tiered rewards, automatic content validation, embed previews, partner avatar support, rewards table, and new claim/submit flows.   * New endpoints and scheduled jobs to sync social metrics and batch-process updates.  * **Improvements**   * Redesigned 
+
+### PR #3444 — Add `GET /api/payouts`
+**Merged:** 2026-02-09  →  https://github.com/dubinc/dub/pull/3444
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added tenantId query support for more flexible payout filtering.  * **Documentation**   * Payout endpoints and operations added to the OpenAPI docs.  * **Improvements**   * Simplified payout endpoints to a consolidated workspace-level path.   * Query shapes refined (fields an
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+
+### PR #3382 — Rename customers components, update for partners side
+**Merged:** 2026-01-25  →  https://github.com/dubinc/dub/pull/3382
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Customer table: country flag + name, linked short-link column with tooltip, first-sale and cancellation date columns, localized created timestamp with tooltip.   * Column customization: persistent pinned menu for column editing and enforced visibility for the menu.   * Row in
+
+### PR #3270 — Submitted referrals
+**Merged:** 2026-01-20  →  https://github.com/dubinc/dub/pull/3270
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Partner referral system: submission sheet, referral table, detail sheet, per-row actions (qualify, unqualify, closed‑won/closed‑lost).  * **Dashboard Improvements**   * Customers / Referrals area: tabs with counts, filters, search, pagination, column controls, and contextual 
+
+---
+
+## apps/web/app/(ee)/api/stripe/integration/webhook/invoice-paid.ts
+*8 PRs in history — generated 2026-03-17*
+
+### PR #3596 — Improve "Matching customer email" fraud checking
+**Merged:** 2026-03-17  →  https://github.com/dubinc/dub/pull/3596
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Improvements**   * Enhanced fraud detection system to differentiate between first-time and returning customer interactions for more accurate fraud checks   * Refined historical domain matching logic to provide better customer verification  * **Maintenance**   * Added cleanup utilities for manag
+**Functions touched:** `invoicePaid()` (L21)
+
+### PR #3514 — Add customer signup date and subscription date as reward condition
+**Merged:** 2026-03-05  →  https://github.com/dubinc/dub/pull/3514
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Rewards can target customer signupDate and subscriptionStartDate; these dates are now available in reward context and partner commission payloads.   * Reward condition types now include date with date-specific operators.  * **UI**   * Added a DatePicker and date-aware inputs 
+**Functions touched:** `invoicePaid()` (L21)
+
+### PR #3467 — Partner postbacks
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3467
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added postback webhooks for partners to receive real-time event notifications.   * Partners can create and manage custom webhooks and Slack integrations.   * Postbacks automatically trigger on lead creation, sales, and commission events.   * Added postback testing, event hist
+**Functions touched:** `invoicePaid()` (L21)
+
+### PR #3474 — Add getLeadEvent helper + cache lead event in createNewCustomer (Stripe)
+**Merged:** 2026-02-17  →  https://github.com/dubinc/dub/pull/3474
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added Redis-backed caching and a cached fetch path for lead events to speed lookups.  * **Bug Fixes**   * Improved error handling and fallbacks in payment webhooks and invoice processing; preserve workspace context when lead data is missing.   * Made sales and order processin
+**Functions touched:** `invoicePaid()` (L21)
+
+### PR #3427 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3427
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Full activity log UI: feed, items, renderers, chips, descriptions, sections, partner group history sheet with "View history" button.   * New hook to fetch activity logs and three new UI icons.  * **Bug Fixes / Improvements**   * Activity logs: nullable user support, richer sc
+**Functions touched:** `invoicePaid()` (L21)
+
+### PR #3423 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3423
+**Functions touched:** `invoicePaid()` (L21)
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+**Functions touched:** `invoicePaid()` (L21)
+
+### PR #3379 — Add more customer stats (`firstSaleAt`, `subscriptionCanceledAt`)
+**Merged:** 2026-01-24  →  https://github.com/dubinc/dub/pull/3379
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Track customers' first purchase date and subscription cancellation date across payments and commission sources   * Stripe webhook now captures subscription cancellation events; backfill script added to populate historical data  * **Improvements**   * Added database indexes to
+**Functions touched:** `invoicePaid()` (L21)
+
+---
+
+## packages/prisma/schema/partner.prisma
+*7 PRs in history — generated 2026-03-17*
+
+### PR #3571 — Add index on `Partner.cryptoWalletAddress`
+**Merged:** 2026-03-12  →  https://github.com/dubinc/dub/pull/3571
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Chores**   * Enhanced database query performance through indexing optimization.  <!-- end of auto-generated comment: release notes by coderabbit.ai -->
+
+### PR #3449 — Stablecoins
+**Merged:** 2026-02-27  →  https://github.com/dubinc/dub/pull/3449
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Stablecoin (USDC) payouts and recipient flows so partners can receive funds to crypto wallets.   * New payout connect UI: selector, dropdown, cards, modals, and connect buttons for Stablecoin, Bank, and PayPal.  * **Improvements**   * Smarter payout method detection, defaults
+
+### PR #3513 — Fix referral customer name/email/country fields
+**Merged:** 2026-02-26  →  https://github.com/dubinc/dub/pull/3513
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **New Features**   * Enhanced referral tracking to capture partner country and lead contact information (name and email).  * **Bug Fixes**   * Improved workspace restoration to handle edge cases when users are unavailable.  <!-- end of auto-generated comment: release notes by coderabbit.ai -->
+
+### PR #3467 — Partner postbacks
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3467
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added postback webhooks for partners to receive real-time event notifications.   * Partners can create and manage custom webhooks and Slack integrations.   * Postbacks automatically trigger on lead creation, sales, and commission events.   * Added postback testing, event hist
+
+### PR #3385 — Improve partner platforms onboarding step
+**Merged:** 2026-01-27  →  https://github.com/dubinc/dub/pull/3385
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Improvements**   * Renamed and streamlined "Online Presence" → "Partner Platforms" across onboarding, forms, and UI (updated labels and fallback text like "No platforms connected").   * Onboarding now navigates to Platforms and then Payouts; deprecated onboarding URLs redirect to new paths.   *
+
+### PR #3270 — Submitted referrals
+**Merged:** 2026-01-20  →  https://github.com/dubinc/dub/pull/3270
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Partner referral system: submission sheet, referral table, detail sheet, per-row actions (qualify, unqualify, closed‑won/closed‑lost).  * **Dashboard Improvements**   * Customers / Referrals area: tabs with counts, filters, search, pagination, column controls, and contextual 
+
+### PR #3315 — Add social media verification functionality
+**Merged:** 2026-01-12  →  https://github.com/dubinc/dub/pull/3315
+**Why:** - Introduced new actions for starting and verifying social media accounts. - Implemented ScrapeCreators API client for fetching and verifying account profiles. - Updated social platform configurations to include names for better user experience. - Added a modal for social verification in the UI, allowing users to verify their accounts on YouTube, Instagram, TikTok, and LinkedIn. - Enhanced the
+
+---
+
+## apps/web/package.json
+*7 PRs in history — generated 2026-03-17*
+
+### PR #3541 — Implement runtime cache to guard against traffic spikes
+**Merged:** 2026-03-09  →  https://github.com/dubinc/dub/pull/3541
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Refactor**   * Improved multi-tier caching: added a short-lived edge-layer fallback and regional cache reads for faster, more reliable link and click lookups; logging updated to reflect cache interactions.  * **Chores**   * Bumped a deployment library version.   * Set middleware runtime to Node
+
+### PR #3517 — Embeddable support chat
+**Merged:** 2026-03-03  →  https://github.com/dubinc/dub/pull/3517
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * AI-powered support chat: authenticated, per-user rate limits, streaming responses, and escalation to human support via ticket creation.   * Two embed modes: responsive embedded widget with dynamic height and transparent layout, plus a floating chat bubble.   * Full chat UI: w
+
+### PR #3432 — Remove posthog from codebase
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3432
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  ## Release Notes  * **Chores**   * Streamlined analytics infrastructure and dependencies to improve application performance and reduce resource overhead   * Optimized backend tracking system configuration for better efficiency  * **Refactor**   * Enhanced upgrade plan workflow to provide improved 
+
+### PR #3397 — Partner referral improvements
+**Merged:** 2026-02-04  →  https://github.com/dubinc/dub/pull/3397
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Unified referral status change flow with confirmation and validation   * New statuses: Meeting and Negotiation   * Edit referral details and custom fields via a new modal   * Status selector dropdown and updated status badges   * Activity logging and change diff tracking  * *
+
+### PR #3328 — Sync partner social statistics
+**Merged:** 2026-01-13  →  https://github.com/dubinc/dub/pull/3328
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Sync and display social stats (followers/subscribers, posts, views) for YouTube, Instagram, TikTok and Twitter across partner profiles, forms, and summaries.   * Expanded verification flow to capture and store platform-specific stats.  * **Background Jobs**   * New paginated 
+
+### PR #3320 — Fix sheet previous/next navigation
+**Merged:** 2026-01-07  →  https://github.com/dubinc/dub/pull/3320
+**Why:** Upgrades `next-safe-action` to include a [fix](https://github.com/TheEdoRan/next-safe-action/pull/377) for stale state access in callbacks. Now when `onNext()` is called in an action's `onSuccess` callback, it'll be the latest version.  Also updates all uses of now-deprecated `actionClient.schema(...)` to `actionClient.inputSchema(...)`  <!-- This is an auto-generated comment: release notes by c
+
+### PR #3321 — Upgrade Tiptap packages
+**Merged:** 2026-01-07  →  https://github.com/dubinc/dub/pull/3321
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Chores**   * Updated TipTap rich text editor library dependencies across the web application and UI packages to unified version 3.15.3. This consolidation standardizes editor library versions throughout the platform and improves overall stability, compatibility, and consistency across all text
+
+---
+
+## apps/web/lib/integrations/shopify/create-sale.ts
+*7 PRs in history — generated 2026-03-17*
+
+### PR #3596 — Improve "Matching customer email" fraud checking
+**Merged:** 2026-03-17  →  https://github.com/dubinc/dub/pull/3596
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Improvements**   * Enhanced fraud detection system to differentiate between first-time and returning customer interactions for more accurate fraud checks   * Refined historical domain matching logic to provide better customer verification  * **Maintenance**   * Added cleanup utilities for manag
+**Functions touched:** `createShopifySale()` (L18)
+
+### PR #3514 — Add customer signup date and subscription date as reward condition
+**Merged:** 2026-03-05  →  https://github.com/dubinc/dub/pull/3514
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Rewards can target customer signupDate and subscriptionStartDate; these dates are now available in reward context and partner commission payloads.   * Reward condition types now include date with date-specific operators.  * **UI**   * Added a DatePicker and date-aware inputs 
+**Functions touched:** `createShopifySale()` (L18)
+
+### PR #3467 — Partner postbacks
+**Merged:** 2026-02-20  →  https://github.com/dubinc/dub/pull/3467
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added postback webhooks for partners to receive real-time event notifications.   * Partners can create and manage custom webhooks and Slack integrations.   * Postbacks automatically trigger on lead creation, sales, and commission events.   * Added postback testing, event hist
+**Functions touched:** `createShopifySale()` (L18)
+
+### PR #3427 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3427
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Full activity log UI: feed, items, renderers, chips, descriptions, sections, partner group history sheet with "View history" button.   * New hook to fetch activity logs and three new UI icons.  * **Bug Fixes / Improvements**   * Activity logs: nullable user support, richer sc
+**Functions touched:** `createShopifySale()` (L18)
+
+### PR #3423 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3423
+**Functions touched:** `createShopifySale()` (L18)
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+**Functions touched:** `createShopifySale()` (L18)
+
+### PR #3379 — Add more customer stats (`firstSaleAt`, `subscriptionCanceledAt`)
+**Merged:** 2026-01-24  →  https://github.com/dubinc/dub/pull/3379
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Track customers' first purchase date and subscription cancellation date across payments and commission sources   * Stripe webhook now captures subscription cancellation events; backfill script added to populate historical data  * **Improvements**   * Added database indexes to
+**Functions touched:** `createShopifySale()` (L18)
+
+---
+
+## apps/web/lib/api/links/cache.ts
+*7 PRs in history — generated 2026-03-17*
+
+### PR #3568 — singleflight fallback
+**Merged:** 2026-03-11  →  https://github.com/dubinc/dub/pull/3568
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Refactor**   * Improved backend request handling to deduplicate concurrent identical link lookups, reducing redundant database work and improving response stability under load.  * **Documentation**   * Clarified an internal error-handling comment to better reflect behavior when the primary cach
+**Functions touched:** `mset()` (L32), `set()` (L48), `get()` (L63), `delete()` (L127), `deleteMany()` (L133), `expireMany()` (L147), `_createKey()` (L162), `_invalidateVercelCache()` (L172)
+
+### PR #3567 — Guard in recordClickCache
+**Merged:** 2026-03-11  →  https://github.com/dubinc/dub/pull/3567
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Bug Fixes**   * Improved cache error handling so cache access failures are swallowed and logged, preventing request interruptions.   * Ensures cached click detection short-circuits processing on hits to avoid duplicate work.   * Prevents downstream overload when cache is unavailable by returnin
+**Functions touched:** `mset()` (L32), `set()` (L48), `get()` (L63), `delete()` (L127), `deleteMany()` (L133), `expireMany()` (L147), `_createKey()` (L162), `_invalidateVercelCache()` (L172)
+
+### PR #3566 — Fallback to vercelCache when redis timeouts
+**Merged:** 2026-03-11  →  https://github.com/dubinc/dub/pull/3566
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Edge (Vercel) caching added with optional writes and invalidation to improve read performance and cache freshness.  * **Bug Fixes**   * Tracking endpoints now tolerate cache timeouts/errors and gracefully fall back so tracking requests succeed.   * Link reads now use a multi-
+**Functions touched:** `mset()` (L32), `set()` (L48), `get()` (L63), `delete()` (L127), `deleteMany()` (L133), `expireMany()` (L147), `_createKey()` (L162), `_invalidateVercelCache()` (L172)
+
+### PR #3565 — Handle `redisWithTimeout`
+**Merged:** 2026-03-11  →  https://github.com/dubinc/dub/pull/3565
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Bug Fixes**   * Added timeout protection (1 second) to cache operations to prevent application hang on slow connections.   * Improved error handling and logging for cache operation failures.  * **Refactor**   * Restructured cache configuration for better timeout management.  <!-- end of auto-g
+**Functions touched:** `mset()` (L32), `set()` (L48), `get()` (L63), `delete()` (L127), `deleteMany()` (L133), `expireMany()` (L147), `_createKey()` (L162), `_invalidateVercelCache()` (L172)
+
+### PR #3556 — Refactor redisUsEast to redisGlobal
+**Merged:** 2026-03-09  →  https://github.com/dubinc/dub/pull/3556
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Link fetches now include associated webhook mappings with returned link data.  * **Chores**   * Centralized caching backend and unified Redis client for tracking and link operations.   * Increased in-memory link cache capacity and TTL for faster, longer-lived hits.   * Redis 
+**Functions touched:** `mset()` (L32), `set()` (L48), `get()` (L63), `delete()` (L127), `deleteMany()` (L133), `expireMany()` (L147), `_createKey()` (L162), `_invalidateVercelCache()` (L172)
+
+### PR #3555 — Remove Vercel runtime cache
+**Merged:** 2026-03-09  →  https://github.com/dubinc/dub/pull/3555
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Chores**   * Simplified internal caching infrastructure by removing an intermediate cache layer, streamlining the link lookup flow. The public-facing functionality remains unchanged.  <!-- end of auto-generated comment: release notes by coderabbit.ai -->
+**Functions touched:** `mset()` (L32), `set()` (L48), `get()` (L63), `delete()` (L127), `deleteMany()` (L133), `expireMany()` (L147), `_createKey()` (L162), `_invalidateVercelCache()` (L172)
+
+### PR #3541 — Implement runtime cache to guard against traffic spikes
+**Merged:** 2026-03-09  →  https://github.com/dubinc/dub/pull/3541
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Refactor**   * Improved multi-tier caching: added a short-lived edge-layer fallback and regional cache reads for faster, more reliable link and click lookups; logging updated to reflect cache interactions.  * **Chores**   * Bumped a deployment library version.   * Set middleware runtime to Node
+**Functions touched:** `mset()` (L32), `set()` (L48), `get()` (L63), `delete()` (L127), `deleteMany()` (L133), `expireMany()` (L147), `_createKey()` (L162), `_invalidateVercelCache()` (L172)
+
+---
+
+## apps/web/lib/api/groups/move-partners-to-group.ts
+*7 PRs in history — generated 2026-03-17*
+
+### PR #3525 — Add option to disable future group move rules for partners
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3525
+**Why:** <img width="1056" height="830" alt="CleanShot 2026-03-05 at 12  07 37" src="https://github.com/user-attachments/assets/eaec5152-5f71-4894-9540-005d1a38028f" /> <img width="880" height="666" alt="CleanShot 2026-03-05 at 12  08 38" src="https://github.com/user-attachments/assets/1e0f3b9d-0ecc-44a6-93c2-d45f2aaee4cc" />   <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ##
+**Functions touched:** `movePartnersToGroup()` (L36)
+
+### PR #3448 — Integrate submission bounties with social stats
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3448
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Social-metrics bounties: tiered rewards, automatic content validation, embed previews, partner avatar support, rewards table, and new claim/submit flows.   * New endpoints and scheduled jobs to sync social metrics and batch-process updates.  * **Improvements**   * Redesigned 
+**Functions touched:** `movePartnersToGroup()` (L36)
+
+### PR #3454 — Improve delete-group feature to be more robust
+**Merged:** 2026-02-11  →  https://github.com/dubinc/dub/pull/3454
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Refactor**   * Partner reassignment during group deletion is now batched and processed in background; final audit logging simplified. * **Bug Fixes / Cleanup**   * Discount remapping and cleanup moved out of the immediate delete transaction into the background job; unused discounts are removed 
+**Functions touched:** `movePartnersToGroup()` (L36)
+
+### PR #3442 — Reward activity log
+**Merged:** 2026-02-10  →  https://github.com/dubinc/dub/pull/3442
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * View reward history via a history sheet and inline "View history" button.   * Activity feed now shows detailed reward events (created/updated/deleted and condition changes).   * Rewards display an "Updated" timestamp.  * **UX Improvements**   * Timestamps show richer details 
+**Functions touched:** `movePartnersToGroup()` (L36)
+
+### PR #3427 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3427
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Full activity log UI: feed, items, renderers, chips, descriptions, sections, partner group history sheet with "View history" button.   * New hook to fetch activity logs and three new UI icons.  * **Bug Fixes / Improvements**   * Activity logs: nullable user support, richer sc
+**Functions touched:** `movePartnersToGroup()` (L36)
+
+### PR #3423 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3423
+**Functions touched:** `movePartnersToGroup()` (L36)
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+**Functions touched:** `movePartnersToGroup()` (L36)
+
+---
+
+## apps/web/app/(ee)/api/workflows/partner-approved/route.ts
+*7 PRs in history — generated 2026-03-17*
+
+### PR #3557 — Show bounties on application page
+**Merged:** 2026-03-11  →  https://github.com/dubinc/dub/pull/3557
+**Why:** Adds eligible group bounties to the shared rewards card across partner program application surfaces and updates the layout to match the Figma reference.  ### Changes - show rewards and eligible bounties in a single shared card - wire group-scoped active bounty summaries into public landing/apply pages, branding previews, marketplace detail, and invite page. - add a View all bounties / View le
+
+### PR #3448 — Integrate submission bounties with social stats
+**Merged:** 2026-02-25  →  https://github.com/dubinc/dub/pull/3448
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Social-metrics bounties: tiered rewards, automatic content validation, embed previews, partner avatar support, rewards table, and new claim/submit flows.   * New endpoints and scheduled jobs to sync social metrics and batch-process updates.  * **Improvements**   * Redesigned 
+
+### PR #3427 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3427
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Full activity log UI: feed, items, renderers, chips, descriptions, sections, partner group history sheet with "View history" button.   * New hook to fetch activity logs and three new UI icons.  * **Bug Fixes / Improvements**   * Activity logs: nullable user support, richer sc
+
+### PR #3423 — Display referral and group moves changelog
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3423
+
+### PR #3232 — Group move
+**Merged:** 2026-02-06  →  https://github.com/dubinc/dub/pull/3232
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Group Move Rules editor in group settings to create/edit auto-reassignment rules.   * Auto-provision discount codes for groups that opt in.   * Partner notification email when a partner is moved (shows new rewards and bounties).  * **Improvements**   * Added "between" compari
+
+### PR #3315 — Add social media verification functionality
+**Merged:** 2026-01-12  →  https://github.com/dubinc/dub/pull/3315
+**Why:** - Introduced new actions for starting and verifying social media accounts. - Implemented ScrapeCreators API client for fetching and verifying account profiles. - Updated social platform configurations to include names for better user experience. - Added a modal for social verification in the UI, allowing users to verify their accounts on YouTube, Instagram, TikTok, and LinkedIn. - Enhanced the
+
+### PR #3301 — Zod v4
+**Merged:** 2026-01-07  →  https://github.com/dubinc/dub/pull/3301
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Bug Fixes**   * Standardized and tightened input validation for emails, URLs, booleans and pagination defaults to reduce validation surprises.   * Stronger typing for record/metadata fields to prevent malformed data.  * **Chores**   * Upgraded core libraries and AI SDK packages; unified metadat
+
+---
+
+## apps/web/app/(ee)/api/partner-profile/programs/[programId]/events/export/route.ts
+*7 PRs in history — generated 2026-03-17*
+
+### PR #3545 — Format code style across partner and API routes
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3545
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **Refactor**   * Reformatted code and cleaned up duplicate imports across several API endpoints and utilities for consistency.  * **Bug Fixes**   * Fixed referral token eligibility logic to correctly handle edge cases around partner reputation and ban status. <!-- end of auto-generated comment: r
+
+### PR #3530 — Convert `saleAmount` to `BigInt`
+**Merged:** 2026-03-06  →  https://github.com/dubinc/dub/pull/3530
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  ## Release Notes  * **New Features**   * Added discount code management for partner programs  * **Bug Fixes**   * Improved handling of large monetary amounts in financial calculations and analytics reporting  * **Improvements**   * Enhanced API response consistency and precision for all monetary fi
+
+### PR #3472 — Fix partner analytics NOT IN + add tests
+**Merged:** 2026-02-16  →  https://github.com/dubinc/dub/pull/3472
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * NOT IN link-id filters are now transformed into equivalent IN filters across analytics and export endpoints; empty complements return not_found.   * API key–based authentication added (with token caching including default partner info).   * Analytics top_links now include par
+
+### PR #3468 — Reject 'is not' link filter on partner analytics/events
+**Merged:** 2026-02-16  →  https://github.com/dubinc/dub/pull/3468
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai -->  ## Summary by CodeRabbit  * **Bug Fixes**   * Added validation checks across partner analytics and events endpoints (both standard and export routes) to properly reject the "is not" filter option. When users attempt to use this unsupported filter, they will receive a clear error message explaining that this filter is not a
+
+### PR #3457 — Advanced Analytics Filters
+**Merged:** 2026-02-15  →  https://github.com/dubinc/dub/pull/3457
+**Why:** Adds support for advanced filter operators in analytics: `IS`, `IS NOT`.  ### Changes  **Frontend:** - Multi-select filter UI with checkboxes - Live filtering (applies immediately) - Operator toggle between "is" and "is not" - Smart display: shows individual values or count ("2 countries") - URL format: `?country=US,BR` or `?country=-US` for negation  **Backend:** - Shared parse functi
+
+### PR #3354 — Add support for async events export
+**Merged:** 2026-01-14  →  https://github.com/dubinc/dub/pull/3354
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Added events export functionality with support for both synchronous and asynchronous processing   * Large event exports (over 1,000 events) now process in the background and notify users via email when ready   * Events export includes detailed columns such as trigger, URL, cu
+
+### PR #3351 — Partner Analytics/Events export
+**Merged:** 2026-01-13  →  https://github.com/dubinc/dub/pull/3351
+**Why:** <!-- This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit  * **New Features**   * Export partner program analytics as a ZIP of CSV reports.   * Export partner program events as CSV files.  * **Improvements**   * Export buttons now select the correct export endpoint based on context.   * Events options always shown on partner dashboard.   * Events view now 
+
+---
