@@ -91,6 +91,25 @@ def build_context(conn: sqlite3.Connection, min_score: float = 0.55) -> dict:
             if score > best_score:
                 best_score, best_pr = score, sid
 
+        # 1. Get the PREVIOUS owner of this function from the Cube
+        previous_cube = conn.execute(
+            "SELECT pr_number, score FROM context_cubes WHERE symbol = ?", 
+            (fn["name"],)
+        ).fetchone()
+
+if previous_cube:
+    # 2. THE MOAT: Don't shift unless the new PR is at least 15% better at explaining the 'Why'
+    # Or, if the new PR is the SAME as the old one, obviously don't shift.
+    relevance_gain = best_score - previous_cube['score']
+    
+    if relevance_gain < 0.15: 
+        # The new PR (What) changed the code, but the old PR (Why) still explains it better.
+        # Keep the old mapping.
+        best_pr = previous_cube['pr_number']
+        intent = previous_cube['intent']
+        event_state = "STABLE"
+    else:
+        event_state = "REDIRECTION_EVENT"
         if best_pr is None or best_score < min_score: continue
 
         pr = conn.execute(
