@@ -66,6 +66,30 @@ def summarise_intent(pr_title: str, pr_body: str, issue_titles: list[str]) -> st
         return pr_title   # graceful fallback
 
 
+def create_context_cube(conn, fn_id, pr_number):
+    """
+    Synthesizes a Contextual Cube from the DB.
+    """
+    # 1. GATHER EVIDENCE (The 'Symptom')
+    # Check how many times this specific function has been 'blamed' in bug-fix PRs
+    friction_query = """
+        SELECT COUNT(*) FROM pull_requests 
+        WHERE number IN (SELECT pr_number FROM pr_files WHERE filename = (SELECT filename FROM functions WHERE id = ?))
+        AND (title LIKE '%fix%' OR body LIKE '%bug%')
+    """
+    friction_count = conn.execute(friction_query, (fn_id,)).fetchone()[0]
+
+    # 2. GATHER RATIONALE (The 'Written')
+    pr_metadata = conn.execute("SELECT title, body FROM pull_requests WHERE number = ?", (pr_number,)).fetchone()
+
+    # 3. CONSTRUCT THE CUBE
+    return {
+        "friction_level": "High" if friction_count > 3 else "Stable",
+        "intent_source": pr_metadata['title'],
+        "evidence_count": friction_count,
+        "symbol_id": fn_id
+    }
+
 # ── Core: build function → intent mapping ─────────────────────────────────────
 
 def build_context(conn: sqlite3.Connection, min_score: float = 0.55) -> dict:
@@ -143,7 +167,32 @@ def build_context(conn: sqlite3.Connection, min_score: float = 0.55) -> dict:
 
     return context
 
+def update_context_cube(conn, symbol_name, new_pr_data):
+    """
+    Checks if the 'Dummy' PR changes the existing mapping.
+    Represented as an Event-State.
+    """
+    # 1. Fetch the CURRENT state of this Symbol
+    current_state = conn.execute(
+        "SELECT pr_number, intent FROM context_cubes WHERE symbol = ?", 
+        (symbol_name,)
+    ).fetchone()
 
+    # 2. If a state exists and the new PR is different, we have a 'Transition'
+    if current_state and current_state['pr_number'] != new_pr_data['number']:
+        event_type = "REDIRECTION_EVENT"
+        print(f"Logic Shift Detected: {symbol_name} moved from PR {current_state['pr_number']} to {new_pr_data['number']}")
+    else:
+        event_type = "INITIAL_STATE"
+
+    # 3. Represent the Knowledge as a State-Change
+    return {
+        "symbol": symbol_name,
+        "current_pr": new_pr_data['number'],
+        "previous_pr": current_state['pr_number'] if current_state else None,
+        "event_state": event_type,
+        "timestamp": datetime.now().isoformat()
+    }
 # ── Render .cursorrules ────────────────────────────────────────────────────────
 
 def render_cursorrules(context: dict, repo: str) -> str:
@@ -181,6 +230,18 @@ def render_cursorrules(context: dict, repo: str) -> str:
 
 def run(db_path: str, output: str, repo: str, min_score: float):
     conn = sqlite3.connect(db_path)
+
+    # NEW: Initialize the State-Event Table
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS context_cubes (
+            symbol TEXT PRIMARY KEY,
+            pr_number INTEGER,
+            intent TEXT,
+            event_state TEXT,
+            last_updated DATETIME
+        )
+    """)
+    conn.commit()
 
     print("Building context map...")
     context = build_context(conn, min_score=min_score)
